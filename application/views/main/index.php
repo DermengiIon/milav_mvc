@@ -10,7 +10,7 @@
 	<meta name="keywords" content="servicii, web, design, milav, IT">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="shortcut icon" type="image/png" href="img/favicon.ico.png"/>
+	<link rel="shortcut icon" type="image/png" href="../../public/img/favicon.ico.png"/>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> 
 	<link rel="stylesheet" href="../../public/css/custom/main.min.css">
 
@@ -19,7 +19,7 @@
 	<header class="header-page">
 		<nav>
 			<div class="logo">
-				<a href=""><img src="../../public/img/logo.png" alt="Servicii web Milav IT" /></a>
+				<a href="iondermengi.milav.eu"><img src="../../public/img/logo.png" alt="Servicii web Milav IT" /></a>
 			</div>
 			<div class="burger-container">
 				<div id="burger">
@@ -129,29 +129,56 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-10 offset-md-1">
-				<div class="col-sm-6 col-xs-12 services-item">
+				<div class="col-sm-6 col-xs-12 services-item" >
 					<div class="services-item-img"><img src="../../public/img/yii2.png" alt="milav yii2"></div>
-					<p>Yii means “simple and evolutionary” in Chinese. But for us it means one of the best web application frameworks that we know. <span class="services-more">more</span></p>
+					<p>Yii means “simple and evolutionary” in Chinese. But for us it means one of the best web application frameworks that we know... <span class="services-more">more</span></p>
+					<div class="more">
+					<p>	Designed to work well with third-party code, it’s highly extendable, pretty fast to code and it utilizes PHP’s most advanced features.</p>
+					<p> Do you need to develop real-time applications? Maybe with Ajax support included?</p>
+			        <p>	Than Yii2 is a good solution for you.</p>
+			        </div>
 				</div>
-				<div class="col-sm-6 col-xs-12 offset-md-6 services-item">
+				<div class="col-sm-6 col-xs-12 offset-md-6 services-item" >
 					<div class="services-item-img"><img src="../../public/img/html5.png" alt="milav html5"></div>
-					<p>The Internet is ubiquitous and we can’t work without it for a long time. The global network connects all devices that can render a website.<span class="services-more">more</span></p>
+					<p>The Internet is ubiquitous and we can’t work without it for a long time. The global network connects all devices that can render a website...<span class="services-more">more</span></p>
+					<div class="more">
+						<p> HTML5 and CSS3 and Javascript are essential ingredients of your modern, responsive website and we have the promise of truly open on any modern day device you can imagine</p>
+                       <p>Want some beautiful and clean web design to work on desktop but also on mobile? HTML5 and CSS3 is the key for correctly embed text content, images and videos. Want something dynamic on your website? Animating the images, or maybe some smart widgets? Javascript is the best solutions for you.</p> 
+					</div>
 				</div>
-				<div class="col-sm-6 col-xs-12 services-item">
+				<div class="col-sm-6 col-xs-12 services-item" >
 					<div class="services-item-img"><img src="../../public/img/php.png" alt="milav php"></div>
 					<p>Did you know that PHP is one of the biggest programing languages out there? And it has a lot of advantages, like fast load time, good for complex calculations, good connectivity with databases and endless possibilities for your ideas...<span class="services-more">more</span></p>
+					<div class="more">
+						<p>That’s why we use it to provide web applications for our clients.</p>
+                        <p>This is how we work: product analysis, design, implementation and maintenance.</p>
+                        <p>What is your idea?</p>
+					</div>
 				</div>
-				<div class="col-sm-6 col-xs-12 offset-md-6 services-item">
+				<div class="col-sm-6 col-xs-12 offset-md-6 services-item" >
 					<div class="services-item-img"><img src="../../public/img/angular.png" alt="milav angular"></div>
 					<p>jQuery was not the best solution for you? We can give better solutions for your project with Angular...<span class="services-more">more</span></p>
+					<div class="more">
+						<p>Or just combining them.</p>
+                        <p>Starting with basic DOM things like color changes on mouse hover, hiding-showing elements on click, up too advanced data-manipulation, we can create powerful web apps, front-end elements that your end-users interact with.</p>
+                        <p>Let us analyze your needs and give you the best solution.</p>
+					</div>
 				</div>
-				<div class="col-sm-6 col-xs-12 services-item">
+				<div class="col-sm-6 col-xs-12 services-item" >
 					<div class="services-item-img"><img src="../../public/img/wordpress.png" alt="milav wordpress"></div>
 					<p>Almost 30% of the websites use Wordpress. That’s like 70 million websites...<span class="services-more">more</span></p>
+					<div class="more">
+						<p>So it’s no surprise that it has 45.000 plugins for all possible features, several thousand themes to choose from, it’s SEO friendly and can handle your blog, news site, webshop and portfolio in the same time. And it’s easy to upload your content after it’s built . And it’s free. And we really know almost every line of code from it. By heart. Really. Choose Wordpress, choose us.</p>
+					</div>
 				</div>
-				<div class="col-sm-6 col-xs-12 offset-md-6 services-item">
+				<div class="col-sm-6 col-xs-12 offset-md-6 services-item" >
 					<div class="services-item-img"><img src="../../public/img/drupal.png" alt="milav drupal"></div>
 					<p>The White House uses Drupal. So does NBA.com and The Economist...<span class="services-more">more</span></p>
+					<div class="more">
+					<p>Why is Drupal the hot shot of CMS’?</p>
+                    <p>Because it has good Security, lots of Plugins and High Scalability for many content types like videos, polls, user management, text, blogs, podcasts etc. for your digital experience.</p>
+                    <p>So if you own a Drupal based portal or you plan to build one, you are in the right place.</p>
+                   </div>
 				</div>
 			</div>
 		</div>
@@ -163,16 +190,84 @@
 	</div>
 	<div class="hosting-table">
 		<ul class="ul-tables">
-			<li class="table1">
-				<table cellpadding="20px" cellspacing="20px">
-					<tr><th></th><th>jskjdsvjsv</th></tr>
-					<tr><th>jskjdsvjsv</th><td>jskjdsvjsv</td></tr>
+			<li>
+				<table>
+					<tr><th class="th-off"></th><th><span class="host-name">BASIC<br>Package</span><br><span class="price">0<sup>99&euro;</sup><sub>/ month</sub></span></th></tr>
+					<?php 
+                      foreach ($vars['basic'] as $val):
+					?>
+					<tr><th>SSD Storage</th><td><?php echo $val->ssd_storage;?></td></tr>
+					<tr><th>Monthly traffic</th><td><?php echo $val->monthly_traffic;?></td></tr>
+					<tr><th>Hosted domains</th><td><?php echo $val->hosted_domains;?></td></tr>
+					<tr><th>Mail boxes</th><td><?php echo $val->mail_boxes;?></td></tr>
+					<tr><th>Database</th><td><?php echo $val->nr_database;?></td></tr>
+					<tr><th>FTP Account</th><td><?php echo $val->ftp_account;?></td></tr>
+					<tr><th>Parced Domains</th><td><?php echo $val->parced_domains;?></td></tr>
+					<tr><th>Subdomains</th><td><?php echo $val->subdomains;endforeach;?></td></tr>
 				</table>
 			</li>
-			<li class="table2">
-				<table cellpadding="20px" cellspacing="20px">
-					<tr><th class="th-hide"></th><th>jskjdsvjsv</th></tr>
-					<tr><th class="th-hide">jskjdsvjsv</th><td>jskjdsvjsv</td></tr>
+			<li>
+				<table>
+					<tr><th class="th-off th-hide"></th><th><span class="host-name">START<br>Package</span><br><span class="price">2<sup>99&euro;</sup><sub>/ month</sub></span></th></tr>
+					<?php 
+                      foreach ($vars['start'] as $val):
+					?>
+					<tr><th class="th-hide">SSD Storage</th><td><?php echo $val->ssd_storage;?></td></tr>
+					<tr><th class="th-hide">Monthly traffic</th><td><?php echo $val->monthly_traffic;?></td></tr>
+					<tr><th class="th-hide">Hosted domains</th><td><?php echo $val->hosted_domains;?></td></tr>
+					<tr><th class="th-hide">Mail boxes</th><td><?php echo $val->mail_boxes;?></td></tr>
+					<tr><th class="th-hide">Database</th><td><?php echo $val->nr_database;?></td></tr>
+					<tr><th class="th-hide">FTP Account</th><td><?php echo $val->ftp_account;?></td></tr>
+					<tr><th class="th-hide">Parced Domains</th><td><?php echo $val->parced_domains;?></td></tr>
+					<tr><th class="th-hide">Subdomains</th><td><?php echo $val->subdomains;endforeach;?></td></tr>
+				</table>
+			</li>
+			<li>
+				<table>
+					<tr><th class="th-off th-hide"></th><th><span class="host-name">BUSINESS<br>Package</span><br><span class="price">3<sup>99&euro;</sup><sub>/ month</sub></span></th></tr>
+					<?php 
+                      foreach ($vars['business'] as $val):
+					?>
+					<tr><th class="th-hide">SSD Storage</th><td><?php echo $val->ssd_storage;?></td></tr>
+					<tr><th class="th-hide">Monthly traffic</th><td><?php echo $val->monthly_traffic;?></td></tr>
+					<tr><th class="th-hide">Hosted domains</th><td><?php echo $val->hosted_domains;?></td></tr>
+					<tr><th class="th-hide">Mail boxes</th><td><?php echo $val->mail_boxes;?></td></tr>
+					<tr><th class="th-hide">Database</th><td><?php echo $val->nr_database;?></td></tr>
+					<tr><th class="th-hide">FTP Account</th><td><?php echo $val->ftp_account;?></td></tr>
+					<tr><th class="th-hide">Parced Domains</th><td><?php echo $val->parced_domains;?></td></tr>
+					<tr><th class="th-hide">Subdomains</th><td><?php echo $val->subdomains;endforeach;?></td></tr>
+				</table>
+			</li>
+			<li>
+				<table>
+					<tr><th class="th-off th-hide"></th><th><span class="host-name">PROFESIONAL<br>Package</span><br><span class="price">5<sup>99&euro;</sup><sub>/ month</sub></span></th></tr>
+					<?php 
+                      foreach ($vars['profesional'] as $val):
+					?>
+					<tr><th class="th-hide">SSD Storage</th><td><?php echo $val->ssd_storage;?></td></tr>
+					<tr><th class="th-hide">Monthly traffic</th><td><?php echo $val->monthly_traffic;?></td></tr>
+					<tr><th class="th-hide">Hosted domains</th><td><?php echo $val->hosted_domains;?></td></tr>
+					<tr><th class="th-hide">Mail boxes</th><td><?php echo $val->mail_boxes;?></td></tr>
+					<tr><th class="th-hide">Database</th><td><?php echo $val->nr_database;?></td></tr>
+					<tr><th class="th-hide">FTP Account</th><td><?php echo $val->ftp_account;?></td></tr>
+					<tr><th class="th-hide">Parced Domains</th><td><?php echo $val->parced_domains;?></td></tr>
+					<tr><th class="th-hide">Subdomains</th><td><?php echo $val->subdomains;endforeach;?></td></tr>
+				</table>
+			</li>
+			<li>
+				<table>
+					<tr><th class="th-off th-hide"></th><th><span class="host-name">CORPORATE<br>Package</span><br><span class="price">9<sup>99&euro;</sup><sub>/ month</sub></span></th></tr>
+					<?php 
+                      foreach ($vars['corporate'] as $val):
+					?>
+					<tr><th class="th-hide">SSD Storage</th><td><?php echo $val->ssd_storage;?></td></tr>
+					<tr><th class="th-hide">Monthly traffic</th><td><?php echo $val->monthly_traffic;?></td></tr>
+					<tr><th class="th-hide">Hosted domains</th><td><?php echo $val->hosted_domains;?></td></tr>
+					<tr><th class="th-hide">Mail boxes</th><td><?php echo $val->mail_boxes;?></td></tr>
+					<tr><th class="th-hide">Database</th><td><?php echo $val->nr_database;?></td></tr>
+					<tr><th class="th-hide">FTP Account</th><td><?php echo $val->ftp_account;?></td></tr>
+					<tr><th class="th-hide">Parced Domains</th><td><?php echo $val->parced_domains;?></td></tr>
+					<tr><th class="th-hide">Subdomains</th><td><?php echo $val->subdomains;endforeach;?></td></tr>
 				</table>
 			</li>
 		</ul>
@@ -278,7 +373,7 @@
 	<div class="sections-names">
 		<label>WE ARE HIRING YOU IF YOU ARE A...</label>
 	</div>
-	<div class="info-left">
+	<div class="info-left" >
 		<h4>Website Developer</h4>
 		<p>Successful Candidate Profile:</p>
 		<p>Education: education in IT area</p>
@@ -316,26 +411,26 @@
 	</div>
 </section>
 <section id="contact" class="contact">
-	<div class="sections-names">
+	<div class="sections-names" >
 		<label>Get in Touch</label>
 	</div>
 	<div class="form">
-		<form action="">
+		<form id="contact-form" action="" method="post">
 			<div class="circle"></div>
 			<div class="left-bar"></div>
-			<div class="label-input">
+			<div class="label-input" >
 				<label for="name">Name</label>
-				<input id="name" type="text" name="name" required/>
+				<input id="name" type="text" name="name" />
 			</div>
-			<div class="label-input">
+			<div class="label-input" >
 				<label for="email">Email</label>
-				<input id="email" type="email" name="email" required/>
+				<input id="email" type="email" name="email" />
 			</div>
 			<div class="label-input">
 				<label for="message">Message</label>
-				<textarea id="message" name="message" rows="5" required></textarea>
+				<textarea id="message" name="message" rows="5" ></textarea>
 			</div>
-			<div class="label-input">
+			<div class="label-input" >
 				<input type="submit" value="Submit"/>
 			</div>
 		</form>
@@ -401,6 +496,5 @@
 
 <script type="text/javascript" src="../../public/js/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="../../public/js/jquery/owl.carousel.min.js"></script>
-<script type="text/javascript" src="../../public/js/custom/system.js"></script>
 <script type="text/javascript" src="../../public/js/custom/main.min.js"></script>
 </html>

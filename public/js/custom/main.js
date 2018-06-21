@@ -31,6 +31,13 @@ var offset = 300,
 // End Back to Top
 
 
+//  Services
+    $('.services-more').click(function(){      
+	$(this).closest('.services-item').find('.more').toggle();
+    });
+// End Services
+
+
 // Contact Buttons
 $(window).on('scroll', function(){
 	var y = $(window).scrollTop(),
@@ -46,7 +53,7 @@ $(window).on('scroll', function(){
 		$("body").append("<div class='box'></div>");
 		$("div.box").css({'top':boxTop});
 		$("div.box").append("<div class='imgbox'></div>");
-		$("div.imgbox").css({'background':'url(../../img/curateniePromotion.jpg) no-repeat center','background-size':'cover'});
+		$("div.imgbox").css({'background':'url(../../public/img/curateniePromotion.jpg) no-repeat center','background-size':'cover'});
 		$("div.imgbox").append("<div class='closebox'></div>");
 	});
 	$(".li-portfolio.item2 .plus").click(function(){
@@ -54,7 +61,7 @@ $(window).on('scroll', function(){
 		$("body").append("<div class='box'></div>");
 		$("div.box").css({'top':boxTop});
 		$("div.box").append("<div class='imgbox'></div>");
-		$("div.imgbox").css({'background':'url(../../img/villanyTelepPromotion.jpg) no-repeat center','background-size':'cover'});
+		$("div.imgbox").css({'background':'url(../../public/img/villanyTelepPromotion.jpg) no-repeat center','background-size':'cover'});
 		$("div.imgbox").append("<div class='closebox'></div>");
 	});
 	$(".li-portfolio.item3 .plus").click(function(){
@@ -62,7 +69,7 @@ $(window).on('scroll', function(){
 		$("body").append("<div class='box'></div>");
 		$("div.box").css({'top':boxTop});
 		$("div.box").append("<div class='imgbox'></div>");
-		$("div.imgbox").css({'background':'url(../../img/artfoyerPromotion.jpg) no-repeat center','background-size':'cover'});
+		$("div.imgbox").css({'background':'url(../../public/img/artfoyerPromotion.jpg) no-repeat center','background-size':'cover'});
 		$("div.imgbox").append("<div class='closebox'></div>");
 	});
 	$(".li-portfolio.item4 .plus").click(function(){
@@ -70,7 +77,7 @@ $(window).on('scroll', function(){
 		$("body").append("<div class='box'></div>");
 		$("div.box").css({'top':boxTop});
 		$("div.box").append("<div class='imgbox'></div>");
-		$("div.imgbox").css({'background':'url(../../img/activRelaxPromotion.jpg) no-repeat center','background-size':'cover'});
+		$("div.imgbox").css({'background':'url(../../public/img/activRelaxPromotion.jpg) no-repeat center','background-size':'cover'});
 		$("div.imgbox").append("<div class='closebox'></div>");
 	});
 	$(".li-portfolio.item5 .plus").click(function(){
@@ -78,7 +85,7 @@ $(window).on('scroll', function(){
 		$("body").append("<div class='box'></div>");
 		$("div.box").css({'top':boxTop});
 		$("div.box").append("<div class='imgbox'></div>");
-		$("div.imgbox").css({'background':'url(../../img/egeszenPromotion.jpg) no-repeat center','background-size':'cover'});
+		$("div.imgbox").css({'background':'url(../../public/img/egeszenPromotion.jpg) no-repeat center','background-size':'cover'});
 		$("div.imgbox").append("<div class='closebox'></div>");
 	});
 	$(document).on('click', ".closebox", function(){
@@ -172,12 +179,113 @@ typeAnimationIt();
 $('.form #name').focus(function(){
   $('.form .left-bar').css({'transform' : 'translateY(0px)'});
 });
+
+$('.form #name').focusout(function(){
+ if($('.form #name').val().length < 1 || !/^[a-zA-Z ]+$/.test($('.form #name').val())){
+    $('#name').addClass('not-valide').removeClass('valide');
+    $('label[for=name]').addClass('not-valide').removeClass('valide');
+  }else{
+  	 $('#name').addClass('valide').removeClass('not-valide');
+    $('label[for=name]').addClass('valide').removeClass('not-valide');
+  }
+});
+
 $('.form #email').focus(function(){
   $('.form .left-bar').css({'transform' : 'translateY(128px)'});
+});
+
+$('.form #email').focusout(function(){
+	var email = $('.form #email').val();
+	var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+	  	if (email == '' || !re.test(email)){
+	  		$('#email').addClass('not-valide').removeClass('valide');
+	        $('label[for=email]').addClass('not-valide').removeClass('valide');
+        } else {
+            $('#email').addClass('valide').removeClass('not-valide');
+            $('label[for=email]').addClass('valide').removeClass('not-valide');
+	    }  	
 });
 $('.form #message').focus(function(){
   $('.form .left-bar').css({'transform' : 'translateY(256px)'});
 });
+$('.form #message').focusout(function(){
+ if($('.form #message').val().length < 1){
+    $('#message').addClass('not-valide').removeClass('valide');
+    $('label[for=message]').addClass('not-valide').removeClass('valide');
+  }else{
+  	 $('#message').addClass('valide').removeClass('not-valide');
+    $('label[for=message]').addClass('valide').removeClass('not-valide');
+  }
+});
+
+$('#contact-form').submit(function(e) {
+	e.preventDefault();
+
+	var nameValide = false;
+    var emailValide = false;
+    var textValide = false;
+
+    if($('#name').hasClass('valide')){
+    	nameValide = true;
+    }else{
+    	$('#name').addClass('not-valide');
+    	$('label[for=name]').addClass('not-valide');	
+    }
+    
+    if($('#email').hasClass('valide')){
+    	emailValide = true;
+    }else{
+    	$('#email').addClass('not-valide');
+    	$('label[for=email]').addClass('not-valide');
+    }
+    
+    if($('#message').hasClass('valide')){
+    	textValide = true;
+    }else{
+    	$('#message').addClass('not-valide');
+    	$('label[for=message]').addClass('not-valide');
+    }
+
+    if(nameValide == true && emailValide == true && textValide == true){
+    
+	    var formdata = new FormData();
+		formdata.append( "name", $('#name').val());
+		formdata.append( "email",$('#email').val() );
+		formdata.append( "message",$('#message').val() );
+		var ajax = new XMLHttpRequest();
+		ajax.open( "POST", 'contact');
+		
+		ajax.onreadystatechange = function() {
+			if(ajax.readyState == 4 && ajax.status == 200) {
+			
+				var response = JSON.parse(ajax.response);
+
+				$('#name').val('').removeClass('valide');
+				$('#email').val('').removeClass('valide');
+				$('#message').val('').removeClass('valide');
+				$('label[for=name]').removeClass('valide');
+				$('label[for=email]').removeClass('valide');
+				$('label[for=message]').removeClass('valide');
+
+				 if(!response.success){
+				 	$('#contact-form').prepend("<h1 id='result' style='text-align:center;margin:0px; color: red;font-size:32px;'>" + response.errorMsg + "</h1>"); 
+				 }
+				 else{
+					$('#contact-form').prepend("<h1 id='result' style='text-align:center;margin:0px; color: green;font-size:32px;'>Thank you</h1>"); 
+
+					setTimeout(function(){
+						$('#contact-form #result').hide(); 
+					}, 4000);
+				 }
+			
+		  }
+		}
+
+		ajax.send(formdata);
+    }
+});
+
 // End Contact
 
 });

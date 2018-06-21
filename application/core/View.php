@@ -16,7 +16,6 @@ class View
 		extract($vars);
 		if (file_exists('application/views/'.$this->path.'.php')){
 			ob_start();
-			require 'application/views/'.$this->path.'.php';
 			$content=ob_get_clean();
 			require 'application/views/'.$this->path.'.php';
 		}else{
